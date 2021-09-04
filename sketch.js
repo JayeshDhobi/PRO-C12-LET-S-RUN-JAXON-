@@ -41,10 +41,11 @@ coin.addImage(coin_Image);
 coin.scale=0.3;
 
 left_boundary=createSprite(0,300,100,600);
+left_boundary.visible=false;
 
 
 right_boundary=createSprite(0,300,100,600);
-
+right_boundary.visible=false;
 
 }
 
@@ -78,44 +79,5 @@ function draw() {
   }
 
 drawSprites();
-
-}
-
-function spawnobject(){
-  var spawnobject=createSprite(0,Math.round(random(50,320)),50,50)
-}
-function Coin() {
-  var coin = createSprite(0,Math.round(random(200, 300)), 80, 90);
-  coin.addImage(coin_Image);
-  coin.velocityY = 3;
-  coin.lifetime = 400;
-  coin.scale = 0.5;
-
-}
-
-function createBomb(){
-  var bomb = createSprite(0,Math.round(random(20,370)),50,50);
-  bomb.addImage(bomb_Image);
-  bomb.velocityY = 3;
-  bomb.lifetime = 400;
-  bomb.scale = 0.01;
-
-}
-
-function createEnergyDrink (){
-   var energyDrink = createSprite(0,Math.round(random(20,370)),10,10);
-   energyDrink.addImage(energyDrink_Image);
-   energyDrink.velocityY = 3;
-   energyDrink.lifetime = 400;
-   energyDrink.scale = 0.01;
-
-}
-
-function createPower (){
-  var power = createSprite(0,Math.round(random(20,370)),10,10);
-  power.addImage(energyDrink_Image);
-  power.velocityY = 3;
-  power.lifetime = 400;
-  power.scale = 0.01;
 
 }
